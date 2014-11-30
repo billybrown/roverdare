@@ -1,0 +1,33 @@
+{
+  "name": "roverdare",
+  "version": "1.0.0",
+  "description": "An html5 canvas game about terraforming Mars",
+  "main": "index.html",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billybrown/roverdare"
+  },
+  "keywords": [
+    "html5",
+    "canvas",
+    "ludum dare",
+    "game"
+  ],
+  "author": "Bill Brown",
+  "bugs": {
+    "url": "https://github.com/billybrown/roverdare/issues"
+  },
+  "homepage": "b.illbrown.com/roverdare",
+  "engines": {
+    "node": "~0.10.33"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-gh-pages": "^0.9.1",
+    "grunt-node-version": "^1.0.0",
+    "jit-grunt": "^0.9.0"
+  }
+}
