@@ -1,0 +1,166 @@
+@import normalize
+@import boiler
+@import base
+
+// ==========================================================================
+//typography
+
+.font-small
+  font-size: .9em
+  line-height: 1.2em
+  font-family: $sans
+  font-weight: normal
+
+.font-title
+  font-size: 1.5em
+  line-height: 1.1em
+  font-family: $serif
+  font-weight: normal
+
+.font-giant
+  font-size: 4em
+  line-height: 1em
+  font-family: $serif
+  font-weight: normal
+
+h1, h2, h3, h4, h5
+  @extend .font-title
+  padding-bottom: 8px
+
+// ==========================================================================
+// General
+
+html, body
+  width: 100%
+  height: 100%
+  margin: 0
+  overflow: hidden
+
+a
+  color: $ocean-blue
+  text-decoration: none
+
+  &:hover
+    color: lighten($ocean-blue, 10%)
+
+img
+  max-width: 100%
+
+
+// ==========================================================================
+// header
+
+
+// ==========================================================================
+// game
+
+.game
+  height: 100%
+  width: 100%
+  margin: 0
+
+  canvas
+    height: 100%
+    width: 100%
+    margin: 0
+
+.control-button
+  position: absolute
+  z-index: 30
+  width: 20px
+  height: 20px
+  text-align: center
+  right: 0
+  bottom: 80px
+  padding: 0px
+  background: $ocean-blue
+  color: white
+  cursor: pointer
+
+  &:hover
+    color: $ocean-blue
+    background: white
+
+
+.controls
+  position: absolute
+  z-index: 20
+  bottom: 80px
+  right: 20px
+  background: rgba(255,255,255,.2)
+  color: white
+  text-transform: uppercase
+  letter-spacing: 2px
+  width: 230px
+  height: 100px
+  font-size: 12px
+  padding: 20px 20px 80px
+  display: none
+ 
+  &.open
+    display: block
+
+  ul
+    padding-bottom: 10px
+
+  .label, a
+    font-weight: bold
+    color: $ocean-blue
+
+  a:hover
+    border-bottom: 2px solid $ocean-blue
+
+  p
+    text-transform: none
+
+.instructions
+  height: 40px
+  position: absolute
+  z-index: 10
+  bottom: 0
+  background: $ocean-blue
+  color: black
+  text-align: center
+  width: 100%
+  font-size: 12px
+  padding: 20px 0 0 0
+  display: none
+
+  &.show
+    display: block
+
+  span
+    background: white
+    padding: 10px
+    +border-radius(5px)
+    font-weight: bold
+    margin: 0 5px
+
+@import helper
+
+// ==========================================================================
+// EXAMPLE Media Queries for Responsive Design.
+// Theses examples override the primary ('mobile first') styles.
+// Modify as content requires.
+// ========================================================================== */
+
+@media only screen and (max-width: 670px) 
+  
+
+@media only screen and (min-width: 620px) 
+  /* Style adjustments for viewports that meet the condition */
+
+@media only screen and (min-width: 950px) 
+  /* Style adjustments for viewports that meet the condition */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) 
+  /* Style adjustments for high resolution devices */
+
+
+// ==========================================================================
+// Print styles.
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ========================================================================== */
+
+@media print 
+  @import print
